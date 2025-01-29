@@ -1,1 +1,16 @@
 .venv/
+# Ignore image files in the media folder
+media/*.jpg
+media/*.jpeg
+media/*.png
+media/*.gif
+media/*.bmp
+media/*.tiff
+media/*.webp
+
+# Track the folder itself (but not images inside it)
+!media/
+
+# You can also specify other types of files you want to exclude
+media/*.thumb
+media/*.tmp
