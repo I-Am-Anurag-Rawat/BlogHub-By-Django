@@ -155,7 +155,7 @@ SECRET_KEY = 'django-insecure-c-qdx4zcsl2&m9(o07*%5edbrkxfmcs7me&@jw@awm!vee7pct
 DEBUG = True
 
 ALLOWED_HOSTS = ['bloghub-7nj7.onrender.com']
-ALLOWED_HOSTS = ['BlogHub.onrender.com']
+# ALLOWED_HOSTS = ['BlogHub.onrender.com']
 
 
 # Application definition
