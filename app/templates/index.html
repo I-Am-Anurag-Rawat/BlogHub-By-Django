@@ -129,10 +129,8 @@
                     {% endif %}
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">{{ blog.title }}</h5>
-                        <p class="card-text text-truncate" style="max-height: 4.5rem; overflow: hidden;">{{
-                            blog.content|slice:":150" }}...</p>
-                        <p class="text-muted small mt-auto">By {{ blog.author.username }} | {{ blog.created_at|date:"M
-                            d, Y, h:i a" }}</p>
+                        <p class="card-text text-truncate" style="max-height: 4.5rem; overflow: hidden;">{{ blog.content|slice:":150" }}...</p>
+                        <p class="text-muted small mt-auto">By {{ blog.author.username }} | {{ blog.created_at|date:"M d, Y, h:i a" }}</p>
                         <div class="d-flex justify-content-between mt-3">
                             <a href="{% url 'blog_detail' blog.id %}" class="btn btn-primary">Read More</a>
                             {% if blog.author == user %}
