@@ -1,4 +1,7 @@
 .venv/
+
+
+media/
 # Ignore image files in the media folder
 media/*.jpg
 media/*.jpeg
