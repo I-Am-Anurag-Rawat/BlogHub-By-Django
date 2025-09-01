@@ -14,6 +14,16 @@ A simple fully responsive blog platform built with Django, where multiple users 
 
 ---
 
+## 📸 Screenshots  
+
+### Desktop View  
+![Desktop Screenshot](project_demo_images/bloghub_desktop.png)
+
+### Mobile View  
+![Mobile Screenshot](project_demo_images/bloghub_mobile.png)  
+
+---
+
 ## 🛠 Tech Stack
 
 - **Backend:** Django (Python)
