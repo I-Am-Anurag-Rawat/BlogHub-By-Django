@@ -14,4 +14,5 @@ urlpatterns = [
     path('delete/<int:blog_id>/', views.delete_blog, name='delete_blog'),
     path('blog_detail/<int:id>/', views.blog_detail, name='blog_detail'),
     path('my_blogs', views.my_blogs, name='my_blogs'),
+    path('search/', views.search, name='search'),
 ]

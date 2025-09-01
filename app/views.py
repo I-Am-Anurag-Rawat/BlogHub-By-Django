@@ -93,9 +93,16 @@ def blog_detail(request, id):
     blog = get_object_or_404(Blog, id=id)  # Fetch the blog post by ID
     return render(request, 'blog_detail.html', {'blog': blog})
 
-@login_required
+@login_required()
 def delete_blog(request, blog_id):
     blog = get_object_or_404(Blog, id=blog_id)
     if blog.author == request.user:
         blog.delete()
     return redirect('index')
+
+def search(request):
+    query = request.GET.get('q')
+    result = []
+    if query:
+        result = Blog.objects.filter(title__icontains='q', author__icontains='q')
+    return render(request, 'search.html', {'result' : result})
